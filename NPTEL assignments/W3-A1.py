@@ -1,7 +1,7 @@
 #Week 3 - assignemnt 1
 
 '''
-n the land of Codeville, young programmers discover an ancient scroll containing
+In the land of Codeville, young programmers discover an ancient scroll containing
 a list of mysterious words — each one part of a secret prefix code used by the town’s
 old network of messengers. Legend says that hidden among these words is one with special
 power: the longest word in the list. But there’s a twist — if more than one word shares
@@ -21,9 +21,18 @@ the list.
 '''
 
 ancientPrefix = input("Enter Ancient Prefix Code: ")
-codes = ancientPrefix.split(",")
+codes  = ancientPrefix.split(",")
 print(codes)
+Scroll = {}
 count = 0
-for x in codes:
-    count += 1
-    print(count)
+for code in codes:
+    for i in code:
+        count +=1
+    Scroll.update({count: code})
+    print(Scroll)
+    count = 0
+
+maxLength = max(Scroll.keys())
+print(maxLength)
+print(Scroll[maxLength])
+
