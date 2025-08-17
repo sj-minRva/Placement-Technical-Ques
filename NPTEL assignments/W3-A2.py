@@ -22,4 +22,4 @@ cargo = input("Enter a decimal number: ").strip().split()
 for x in cargo:
     weight = float(x)
     rounded = round(weight)
-    print(rounded,",")
+    print(",".join(rounded))
