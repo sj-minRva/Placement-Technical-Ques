@@ -35,6 +35,7 @@ important.
 You can assume that at least one birthday twin pair will exist in any test case.
 """
 
+
 names = input().strip().split(',')
 dates = list(map(int, input().strip().split(',')))
 
