@@ -1,0 +1,54 @@
+🎯 4. Prefix Sum Practice Problems (Sorted by Difficulty)
+Beginner Level
+
+Range Sum Query (Static)
+Given an array, answer multiple queries of the form sum(l, r).
+
+Running Sum of 1D Array (LeetCode 1480)
+Build prefix sum.
+
+Find Pivot Index (LC 724)
+Use prefix sum to check left sum = right sum.
+
+Medium Level
+
+Subarray Sum Equals K (LC 560) ⭐
+Count subarrays whose sum = k using prefix sum + hashmap.
+
+Minimum Size Subarray Sum (LC 209)
+Can use prefix sum + binary search or sliding window.
+
+Equilibrium Index of Array
+Find index where left sum = right sum.
+
+Count Number of Nice Subarrays (LC 1248)
+Use prefix sum to count subarrays with k odd numbers.
+
+Binary Subarrays With Sum = Target (LC 930)
+Prefix sum + hashmap.
+
+Hard Level
+
+Maximum Sum of Subarray of Size K
+Can be sliding window, but prefix sum works too.
+
+Longest Subarray with Sum Divisible by K
+Use prefix mod and hashmap.
+
+Longest Subarray with Equal 0s and 1s
+Convert 0 → -1, use prefix sum.
+
+Matrix Prefix Sum (2D Prefix Sum) ⭐
+Compute submatrix sum in O(1).
+
+⭐ 5. Bonus: 2D Prefix Sum Formula (for matrix problems)
+
+If you ever need submatrix sum:
+
+prefix[i][j] = matrix[i][j] 
+             + prefix[i-1][j] 
+             + prefix[i][j-1] 
+             - prefix[i-1][j-1]
+
+
+Allows O(1) submatrix range queries.
